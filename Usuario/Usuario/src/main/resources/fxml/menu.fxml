@@ -4,27 +4,35 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.usuario.control.MenuController">
-   <children>
-      <Label layoutX="180.0" layoutY="22.0" prefHeight="80.0" prefWidth="239.0" text="BIENVENIDOS" textFill="#5006bf">
-         <font>
-            <Font size="36.0" />
-         </font>
-      </Label>
-       <Button fx:id="btnUsuario" layoutX="31.0" layoutY="141.0"
-               prefHeight="91.0" prefWidth="175.0"
-               text="Iniciar sesión" textFill="#a6a80ffd"
-               onAction="#irALogin">
-           <font>
-               <Font size="24.0" />
-           </font>
-       </Button>
+<AnchorPane prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="pe.edu.upeu.usuario.control.MenuController">
+    <children>
+        <Label layoutX="180.0" layoutY="22.0"
+               prefHeight="80.0" prefWidth="239.0"
+               text="BIENVENIDOS" textFill="#5006bf">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
 
-       <Button fx:id="btnRegistrar" layoutX="360.0" layoutY="141.0"
-               prefHeight="91.0" prefWidth="154.0"
-               text="Registrarse" textFill="#4934a6"
-               onAction="#irARegistro">
-           <font>
-               <Font size="24.0" />
-           </font>
-       </Button>
+        <Button fx:id="btnUsuario" layoutX="31.0" layoutY="141.0"
+                prefHeight="91.0" prefWidth="175.0"
+                text="Iniciar sesión" textFill="#a6a80ffd"
+                onAction="#irALogin">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+
+        <Button fx:id="btnRegistrar" layoutX="360.0" layoutY="141.0"
+                prefHeight="91.0" prefWidth="154.0"
+                text="Registrarse" textFill="#4934a6"
+                onAction="#irARegistro">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
