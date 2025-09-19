@@ -3,29 +3,21 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controllers.VentaController"
-            prefWidth="600" prefHeight="400">
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="pe.edu.upeu.ventalaptops.controller.LoginController"
+            prefWidth="400" prefHeight="250">
 
     <children>
-        <Label text="Venta de Laptops" layoutX="230" layoutY="20" style="-fx-font-size: 18px;"/>
+        <Label layoutX="50" layoutY="30" text="Registro Gmail" style="-fx-font-size:16px; -fx-font-weight:bold;"/>
 
-        <Label text="Nombre:" layoutX="50" layoutY="80"/>
-        <TextField fx:id="txtNombre" layoutX="150" layoutY="75" prefWidth="200"/>
+        <Label layoutX="50" layoutY="70" text="Gmail:"/>
+        <TextField fx:id="txtGmail" layoutX="150" layoutY="65" prefWidth="200" promptText="ejemplo@gmail.com"/>
 
-        <Label text="Email:" layoutX="50" layoutY="120"/>
-        <TextField fx:id="txtEmail" layoutX="150" layoutY="115" prefWidth="200"/>
+        <Label layoutX="50" layoutY="110" text="Contraseña:"/>
+        <PasswordField fx:id="txtPassword" layoutX="150" layoutY="105" prefWidth="200" promptText="******"/>
 
-        <Label text="Marca:" layoutX="50" layoutY="160"/>
-        <ComboBox fx:id="comboMarca" layoutX="150" layoutY="155" prefWidth="200"/>
+        <Button fx:id="btnRegister" layoutX="150" layoutY="160" text="Registrar" onAction="#registrarGmail"/>
 
-        <Label text="Laptop:" layoutX="50" layoutY="200"/>
-        <ComboBox fx:id="comboLaptop" layoutX="150" layoutY="195" prefWidth="200"/>
-
-        <Button text="Vender" layoutX="150" layoutY="250"
-                onAction="#realizarVenta" prefWidth="100"/>
-
-        <Label fx:id="lblResultado" layoutX="50" layoutY="300" prefWidth="500"
-               style="-fx-text-fill: green; -fx-font-weight: bold;"/>
+        <Label fx:id="lblMensaje" layoutX="50" layoutY="200" textFill="red"/>
     </children>
 </AnchorPane>
