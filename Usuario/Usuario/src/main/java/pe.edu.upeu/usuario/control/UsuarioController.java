@@ -10,12 +10,14 @@ import java.awt.*;
 
 @Controller
 public class UsuarioController {
-    @FXML private TextField txtNum1, txtNum2;
-    @FXML private Button btningresado;
-    @FXML private Label ingresado;
 
-    @FXML
-    private void  ingresado(){
+    @FXML private Button btnmarca1;
+    @FXML private Button btnmarca2;
+    @FXML private Button btnmarca3;
+    private void marca1(){
+        //cambiarescena("")
 
     }
+
+
 }

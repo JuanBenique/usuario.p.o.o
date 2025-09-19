@@ -3,21 +3,19 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="pe.edu.upeu.ventalaptops.controller.LoginController"
-            prefWidth="400" prefHeight="250">
+<AnchorPane prefHeight="250" prefWidth="400" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="pe.edu.upeu.usuario.control.RegistroController">
 
     <children>
-        <Label layoutX="50" layoutY="30" text="Registro Gmail" style="-fx-font-size:16px; -fx-font-weight:bold;"/>
+        <Label layoutX="50" layoutY="30" style="-fx-font-size:16px; -fx-font-weight:bold;" text="Registro Gmail" />
 
-        <Label layoutX="50" layoutY="70" text="Gmail:"/>
-        <TextField fx:id="txtGmail" layoutX="150" layoutY="65" prefWidth="200" promptText="ejemplo@gmail.com"/>
+        <Label layoutX="50" layoutY="70" text="Gmail:" AnchorPane.topAnchor="65.0" />
+        <TextField fx:id="txtGmail" layoutX="150.0" layoutY="65" prefWidth="200" promptText="ingrese el gmail" AnchorPane.bottomAnchor="160.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="65.0" />
 
-        <Label layoutX="50" layoutY="110" text="Contraseña:"/>
-        <PasswordField fx:id="txtPassword" layoutX="150" layoutY="105" prefWidth="200" promptText="******"/>
+        <Label layoutX="50" layoutY="110" text="Contraseña:" />
+        <PasswordField fx:id="txtPassword" layoutX="150" layoutY="105" prefWidth="200" promptText="******" />
 
-        <Button fx:id="btnRegister" layoutX="150" layoutY="160" text="Registrar" onAction="#registrarGmail"/>
+        <Button fx:id="btnRegister" layoutX="150" layoutY="160" onAction="#registrarGmail" text="Registrar" />
 
-        <Label fx:id="lblMensaje" layoutX="50" layoutY="200" textFill="red"/>
+        <Label fx:id="lblMensaje" layoutX="50" layoutY="200" textFill="red" />
     </children>
 </AnchorPane>

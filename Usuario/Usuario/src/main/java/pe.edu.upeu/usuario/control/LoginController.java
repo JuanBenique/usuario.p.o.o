@@ -23,13 +23,13 @@ public class LoginController {
 
 
         if(correo.isEmpty() || contrasena.isEmpty()) {
-            lblMensaje.setText("Por favor, complete todos los campos.");
+            lblMensaje.setText("Por favor completar todos los campos.");
             return;
         }
 
-        if(correo.equals("admin@upeu.edu.pe") && contrasena.equals("1234")) {
+        if(correo.equals("juan@gmail.com") && contrasena.equals("1234")) {
             lblMensaje.setStyle("-fx-text-fill: green;");
-            lblMensaje.setText("¡Login exitoso!");
+            lblMensaje.setText("ingreso exitoso ");
 
         } else {
             lblMensaje.setStyle("-fx-text-fill: red;");

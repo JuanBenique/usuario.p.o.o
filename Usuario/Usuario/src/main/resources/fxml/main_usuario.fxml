@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="aceptado" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.usuario.control.UsuarioController" />
+<AnchorPane fx:id="aceptado" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.usuario.control.UsuarioController">
+   <children>
+      <Label layoutX="173.0" layoutY="161.0" prefHeight="79.0" prefWidth="226.0" text="lista de marcas" textFill="#250909">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnmarca1" layoutX="28.0" layoutY="318.0" mnemonicParsing="false" text="marca1" />
+      <Button fx:id="btnmarca2" layoutX="245.0" layoutY="318.0" mnemonicParsing="false" text="marca2" />
+      <Button fx:id="btnmarca3" layoutX="471.0" layoutY="318.0" mnemonicParsing="false" text="marca 3" />
+      <Label layoutX="75.0" layoutY="30.0" prefHeight="51.0" prefWidth="220.0" text="bienvenido , que se le ofrece">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

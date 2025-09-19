@@ -9,10 +9,10 @@
         <Label layoutX="86.0" layoutY="28.0" style="-fx-font-weight: bold; -fx-font-size: 18px;" text="completar los datos corresppodientes" />
 
         <Label layoutX="48.0" layoutY="63.0" text="Correo:" />
-        <TextField fx:id="txtCorreo" layoutX="40.0" layoutY="96.0" prefWidth="200" promptText="Correo electrónico" />
+        <TextField fx:id="txtCorreo" layoutX="40.0" layoutY="96.0" prefWidth="200" promptText="ingrese su correo" />
 
         <Label layoutX="48.0" layoutY="141.0" text="Contraseña:" />
-        <PasswordField fx:id="txtPassword" layoutX="40.0" layoutY="164.0" prefWidth="200" promptText="Contraseña" />
+        <PasswordField fx:id="txtPassword" layoutX="40.0" layoutY="164.0" prefWidth="200" promptText="ingrese su Contraseña" />
 
         <Button layoutX="40.0" layoutY="248.0" onAction="#irALogin" prefWidth="80" text="Ingresar" />
 

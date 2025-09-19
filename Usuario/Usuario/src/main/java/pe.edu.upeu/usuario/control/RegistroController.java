@@ -1,4 +1,4 @@
-package pe.edu.upeu.ventalaptops.controller;
+package pe.edu.upeu.usuario.control;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -11,7 +11,7 @@ public class RegistroController {
     @FXML private PasswordField txtPassword;
     @FXML private Label lblMensaje;
 
-    // Simula base de datos
+
     private final List<Usuario> usuarios = new ArrayList<>();
 
     @FXML
@@ -20,7 +20,7 @@ public class RegistroController {
         String password = txtPassword.getText().trim();
 
         if(gmail.isEmpty() || password.isEmpty()) {
-            lblMensaje.setText("Debe completar todos los campos.");
+            lblMensaje.setText("Debe completar todos los datos.");
             return;
         }
 
@@ -29,18 +29,15 @@ public class RegistroController {
             return;
         }
 
-        // Guardar en "base de datos"
         usuarios.add(new Usuario(gmail, password));
         lblMensaje.setStyle("-fx-text-fill:green");
         lblMensaje.setText("Usuario registrado correctamente!");
 
-        // Limpiar campos
         txtGmail.clear();
         txtPassword.clear();
     }
 
-    // Clase interna para almacenar usuarios
-    public static class Usuario {
+    public static class Usuario {//guardar el gmail creados
         private String gmail;
         private String password;
 
