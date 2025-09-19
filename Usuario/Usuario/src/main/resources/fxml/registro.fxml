@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="pe.edu.upeu.usuario.control.RegistroController"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controllers.VentaController"
+            prefWidth="600" prefHeight="400">
 
+    <children>
+        <Label text="Venta de Laptops" layoutX="230" layoutY="20" style="-fx-font-size: 18px;"/>
+
+        <Label text="Nombre:" layoutX="50" layoutY="80"/>
+        <TextField fx:id="txtNombre" layoutX="150" layoutY="75" prefWidth="200"/>
+
+        <Label text="Email:" layoutX="50" layoutY="120"/>
+        <TextField fx:id="txtEmail" layoutX="150" layoutY="115" prefWidth="200"/>
+
+        <Label text="Marca:" layoutX="50" layoutY="160"/>
+        <ComboBox fx:id="comboMarca" layoutX="150" layoutY="155" prefWidth="200"/>
+
+        <Label text="Laptop:" layoutX="50" layoutY="200"/>
+        <ComboBox fx:id="comboLaptop" layoutX="150" layoutY="195" prefWidth="200"/>
+
+        <Button text="Vender" layoutX="150" layoutY="250"
+                onAction="#realizarVenta" prefWidth="100"/>
+
+        <Label fx:id="lblResultado" layoutX="50" layoutY="300" prefWidth="500"
+               style="-fx-text-fill: green; -fx-font-weight: bold;"/>
+    </children>
 </AnchorPane>
